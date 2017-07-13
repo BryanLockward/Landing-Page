@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <title>New Ninja</title>
+</head>
+<body>
+  <h1>Sign up to be a ninja</h1>
+  <form id="formninja" action="" method="post">
+    <label for="name">Name: </label><input type="text" name="name">
+    <label for="age">Age: </label><input type="text" name="age">
+    <label for="fight">Fight Training: </label><input type="text" name="fight" >
+    <label for="clothes">Do you own a ninja outfit: </label>
+    <select name="clothes">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</body>
+</html>
